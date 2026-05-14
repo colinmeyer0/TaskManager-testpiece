@@ -30,4 +30,11 @@ public class TaskService
         task.Status = TaskStatus.Completed;
         _repo.Update(task);
     }
+
+    public void DeleteTask(int id)
+    {
+        _ = _repo.GetById(id) ??
+            throw new KeyNotFoundException($"No task with ID {id}.");
+        _repo.Delete(id);
+    }
 }
