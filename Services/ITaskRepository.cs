@@ -1,3 +1,7 @@
+using TaskManagerCLI.Models;
+
+namespace TaskManagerCLI.Services;
+
 public interface ITaskRepository
 {
     void Add(TaskItem task);
