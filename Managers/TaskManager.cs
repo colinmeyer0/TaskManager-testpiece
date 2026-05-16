@@ -79,7 +79,7 @@ public class TaskManager : ITaskManager
 
                             foreach (TaskItem task in group)
                             {
-                                InputService.PrintTask(task);
+                                OutputService.PrintTask(task);
                             }
                         }
                         break;

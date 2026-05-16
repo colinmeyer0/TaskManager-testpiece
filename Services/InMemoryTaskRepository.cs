@@ -2,7 +2,7 @@ using TaskManagerCLI.Models;
 
 namespace TaskManagerCLI.Services;
 
-class InMemoryTaskRepository : ITaskRepository
+public class InMemoryTaskRepository : ITaskRepository
 {
     private readonly List<TaskItem> _tasks = new();
     private int _nextId = 1;
